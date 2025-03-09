@@ -51,7 +51,7 @@ export default function Home() {
   // };
 
   // Modify handleSubmit function
-  
+
 const handleSubmit = async (e:any) => {
   e.preventDefault(); // Prevent form default submission
   
@@ -212,12 +212,13 @@ const handleSubmit = async (e:any) => {
                 Check
               </Button>
               
-              {error && <p style={{ color: "red" }}>{error}</p>}
+             
+            </div>
+            </form>
+            {error && <p style={{ color: "red" }}>{error}</p>}
               <button onClick={generateCaptcha} style={{ marginTop: "10px" }}>
                 Refresh CAPTCHA
               </button>
-            </div>
-            </form>
           </div>
         </main>
       </div>
